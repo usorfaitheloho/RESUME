@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(245, 240, 240);
+    overflow-x: hidden; 
+}
+
+.container{
+    padding: 1rem 10rem;
+    margin: 0 auto;
+}
+
+.header{
+    padding: 2rem 4rem;
+    background-color: #1C1C1C;
+    color: #FFF9F9;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+div.right-heading{
+    padding: 0.5rem 2rem;
+}
+div.right-heading h1{
+    font-size: 2rem;
+}
+div.right-heading p{
+    font-size: 1.2rem;
+}
+
+div.left-heading{
+    padding: 0.5rem 2rem;
+}
+div.left-heading h3{
+    font-size: 1.5rem;
+}
+
+ul.left-heading{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+ul li{
+    list-style: none;
+    padding: 0.1rem 0;
+}
+
+ul li a{
+    text-decoration: none;
+    padding: 0.5%;
+}
+
+ul li a:hover{
+    color: #646161;
+    background: #926969;
+}
+
+.body{
+    padding: 2rem 4rem;
+}
+.body .about{
+    width: 100%;
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-columns: 41% 41% 41%;
+}
+.body .about h2{
+    padding: 0.5rem 2rem;
+}
+
+.body .about p{
+    font-size: 18px;
+    padding: 0 2rem 0.5rem 2rem;
+    margin-bottom: 1rem;
+}
+
+.body .exp-edu-ski-int{
+    width: 100%;
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin: 1rem 0;
+}
+.body .exp-edu-ski-int h2{
+    padding: 0.5rem 2rem;
+}
+.body .exp-edu-ski-int p{
+    font-size: 17px;
+    padding: 0 2rem 0.5rem 2rem;
+    margin-bottom: 1rem;
+}
+
+.body .exp-edu-ski-int .edu p{
+    padding: 0;
+}
+.body .exp-edu-ski-int .exp p{
+    padding: 0;
+}
+
+.body .exp-edu-ski-int .exp .row{
+    margin-bottom: 2rem;
+}
+.body .exp-edu-ski-int .edu .row{
+    margin-bottom: 2rem;
+}
+
+
+@media (max-width: 1400px) {
+    .body .about .hobbies,
+    .body .about .stack {
+        padding: 0;
+    }
+
+    .body .about .about-me p {
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 1100px){
+    .container{
+        padding: 0;
+        margin: 0 auto;
+    }
+    .body .about  {
+        padding: 0;
+    }
+}
+
+@media (max-width: 800px){
+    .container{
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .header{
+        padding: 2rem 6rem;
+    }
+
+    .right-heading, .left-heading{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+    div.left-heading h3{
+        display: none;
+    }
+
+    .body{
+        padding: 1rem 2rem;
+    }
+    .body .about{
+        width: 100%;
+        display: block;
+    }
+    .body .exp-edu-ski-int{
+        width: 100%;
+        display: block;
+    }
+}
+
+@media (max-width: 320px){
+    .container{
+        padding: 0;
+        margin: 0 auto;
+    }
+    .header{
+        padding: 2rem 6rem;
+    }
+    .right-heading, .left-heading{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+    .body .about {
+        width: 100%;
+        display: block;
+    
+    }
+}
